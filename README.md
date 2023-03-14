@@ -29,7 +29,7 @@ Filer som kan ignoreras (låt de bara ligga kvar):
 
 ## Krav för godkänt
 
-Lämna in länken till ditt forkade repo senast tisdagen den 21/3.
+Lämna in länken till ditt forkade repo senast tisdagen den 21/3. Du bör ha fått tillgång till en ny inlämningsuppgift tillagt på ItsLearning som heter "Kompletteringsuppgift för inlämningsuppgift 2" där du kan lämna in länken.
 
 För att uppnå godkänt måste ditt API:
 
