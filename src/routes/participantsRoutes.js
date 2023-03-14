@@ -2,10 +2,7 @@ const express = require("express");
 
 const router = express.Router();
 
- const {
-    updateParticipant
-    
-  } = require("../controllers/participantController");
+ const {updateParticipant} = require("../controllers/participantController");
  
 
 

@@ -8,7 +8,7 @@ const {
     deleteParticipantFromClass
   
    
-  } = require("../controllers/participantController");
+  } = require("../controllers/danceClassController");
 
 
   
