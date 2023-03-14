@@ -24,7 +24,7 @@ betalningsstatus: {
 
 danceClass: {
     type: mongoose.Schema.Types.ObjectId,
-    ref: 'danceClass'
+    ref: 'DanceClass'
   }
 });
 

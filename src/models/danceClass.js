@@ -39,9 +39,8 @@ const danceClassSchema = new mongoose.Schema({
 
      
 klassLedare: {
-
-    type: String,
-    enum: ["Leo", "Lisette", "Valentino", "Joan", "Andreas", "Inka"]
+    type: [String],
+    
     }, 
 
 
