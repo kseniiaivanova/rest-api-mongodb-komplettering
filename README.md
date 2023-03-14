@@ -35,3 +35,11 @@ För att uppnå godkänt måste ditt API:
 
 - Fungerara enligt ovanstående instruktioner med NodeJS version 18.12.1
 - Ha någon form av error hantering som hindrar servern från att krascha om något går fel
+
+För VG:
+
+- Bra kodkvalitet & logisk filstruktur (MVC) i kodbasen
+- Logiken i dina controllers
+- REST API:et följer best practices när det kommer till REST API design
+- Mongoose schemat följer best practices när det kommer till MongoDB databasdesign
+- Ditt REST API ger korrekta responser även när saker går fel (t.ex. inkorrekta requests, requests för resurser som inte finns, oväntade errors)
