@@ -1,3 +1,15 @@
+# Routes
+
+## Dansklass routes
+
+- Add participant to dance class: POST /api/v1/danceClasses/:danceClassId/users
+- Get all dance classes GET /api/v1/danceClasses/
+- Delete participant from dance class: DELETE /api/v1/danceClasses/:danceClassId/users  (provide "userID" in body)
+
+## Deltagare routes
+
+- Update participant: PUT  /api/v1/users/:userId
+
 ## Kompletteringsuppgift för Inlämningsuppgift 2 (REST API med MongoDB)
 
 Detta är en kompletteringsuppgift för kursens individuella inlämningsuppgift nummer 2 som ämnar till att utvärdera elevens individuella kunskaper kring ExpressJS, REST API och MongoDB samt följande lärandemål från kursplanen:
