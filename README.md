@@ -2,13 +2,13 @@
 
 ## Dansklass routes
 
-- Add participant to dance class: POST /api/v1/danceClasses/:danceClassId/users
+- Add participant to dance class: POST /api/v1/danceClasses/:danceClassId/participants
 - Get all dance classes GET /api/v1/danceClasses/
-- Delete participant from dance class: DELETE /api/v1/danceClasses/:danceClassId/users  (provide "userID" in body)
+- Delete participant from dance class: DELETE /api/v1/danceClasses/:danceClassId/participants  (provide "participantID" in body)
 
 ## Deltagare routes
 
-- Update participant: PUT  /api/v1/users/:userId
+- Update participant: PUT  /api/v1/participants/:participantId
 
 ## Kompletteringsuppgift för Inlämningsuppgift 2 (REST API med MongoDB)
 
