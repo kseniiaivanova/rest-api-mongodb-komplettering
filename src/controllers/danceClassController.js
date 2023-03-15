@@ -7,7 +7,7 @@ const Participant = require("../models/participant");
 exports.getAllClasses = async (req, res) => {
   const danceClasses = await DanceClass.find();
 
-  if (!danceClasses) throw new NotFoundError("There are no carts to show");
+  if (!danceClasses) throw new NotFoundError("Finns inga klasser tyvärr!");
 
     return res.json({
     data: danceClasses,
