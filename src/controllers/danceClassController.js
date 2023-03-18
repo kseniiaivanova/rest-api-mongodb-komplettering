@@ -70,4 +70,27 @@ exports.addParticipantToClass = async (req, res) => {
       res.status(500).send("Ett fel inträffade vid skapandet av deltagaren.");
     }
   };
+   
+
+
+  exports.deleteParticipantFromClass = async (req, res, next) => {
+    try {
+      const { classId, participantId } = req.params;
+      
+      // Find the dance class by ID and remove the participant ID from the participants array
+      const danceClass = await DanceClass.findByIdAndUpdate(
+        classId,
+        { $pull: { participants: participantId } },
+        { new: true }
+      );
+  
+      if (!danceClass) {
+        throw new NotFoundError ("Finns inga klasser med den här id!");
+      }
+  
+      res.status(200).json(danceClass);
+    } catch (error) {
+      next(error);
+    }
+  };
 
