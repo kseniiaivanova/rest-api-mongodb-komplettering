@@ -5,18 +5,28 @@ const Participant = require("../models/participant");
 
 //--------------------------------------------//
 exports.getAllClasses = async (req, res) => {
+  
   const danceClasses = await DanceClass.find();
 
   if (!danceClasses) throw new NotFoundError("Finns inga klasser tyvärr!");
 
     return res.json({
     data: danceClasses,
-    /* meta: {
-      total: totalCartsInDatabase,
-      count: carts.length,
-    }, */
+    
+    
   });
 };
+
+
+exports.getActiveClasses = async (req, res) => {
+
+  const activeClasses = await DanceClass.find({status: "aktiv"});
+  if (!activeClasses) throw new NotFoundError("Finns inga aktiva klasser tyvärr!");
+  
+  return res.json(activeClasses)
+
+}
+
 
 exports.addParticipantToClass = async (req, res) => {
     try {
