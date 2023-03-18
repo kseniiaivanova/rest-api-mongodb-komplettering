@@ -5,8 +5,8 @@ const router = express.Router();
 const {
     getAllClasses,
     addParticipantToClass,
-    deleteParticipantFromClass
-  
+    //deleteParticipantFromClass
+
    
   } = require("../controllers/danceClassController");
 
@@ -14,7 +14,7 @@ const {
   
   router.get("/", getAllClasses);
   router.post("/:danceclassId/participants", addParticipantToClass);
-  router.delete("/:danceclassId/participants", deleteParticipantFromClass);
+  //router.delete("/:danceclassId/participants", deleteParticipantFromClass);
   
   
 

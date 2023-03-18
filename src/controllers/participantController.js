@@ -9,7 +9,7 @@ exports.updateParticipant = async (req, res) => {
 
   const participantToUpdate = await Participant.findById(participantId);
 
-  if (!participantToUpdate) throw new NotFoundError("This product does not exist");
+  if (!participantToUpdate) throw new NotFoundError("Deltagaren med den här id finns inte!");
 
   if (email) participantToUpdate.email = email;
   if (betalningsstatus) participantToUpdate.betalningsstatus = betalningsstatus;
