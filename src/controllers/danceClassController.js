@@ -20,7 +20,7 @@ exports.getAllClasses = async (req, res, next) => {
   }
 };
 
-exports.getActiveClasses = async (req, res, next) => {
+/* exports.getActiveClasses = async (req, res, next) => {
   try {
     const activeClasses = await DanceClass.find({ status: "aktiv" });
     if (!activeClasses) {
@@ -31,7 +31,7 @@ exports.getActiveClasses = async (req, res, next) => {
   } catch (error) {
     next(error);
   }
-};
+}; */
 
 exports.addParticipantToClass = async (req, res, next) => {
   try {
