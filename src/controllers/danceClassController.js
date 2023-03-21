@@ -89,5 +89,5 @@ exports.addParticipantToClass = async (req, res) => {
       }
     };
     
-  
+  }
     
