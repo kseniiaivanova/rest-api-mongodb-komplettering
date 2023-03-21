@@ -24,9 +24,10 @@ exports.addParticipantToClass = async (req, res) => {
       const { namn, email, role } = req.body;
   
       // Kontrollera antalet deltagare i klassen
-      const totalParticipants = await Participant.find({ danceClass: danceClass._id }).countDocuments();
+      /* const totalParticipants = await Participant.find({ danceClass: danceClass._id }).countDocuments();
       const totalLeaders = await Participant.find({ danceClass: danceClass._id, role: "ledare" }).countDocuments();
       const totalFollowers = await Participant.find({ danceClass: danceClass._id, role: "följare" }).countDocuments();
+      
   
       if (totalParticipants >= 20) {
         return res.status(400).send("Klassen har redan max antal deltagare.");
@@ -39,7 +40,7 @@ exports.addParticipantToClass = async (req, res) => {
       if (role === "följare" && totalFollowers >= 10) {
         return res.status(400).send("Klassen har redan max antal följare.");
       }
-  
+   */
       const participant = new Participant({
         namn,
         email,
@@ -51,7 +52,7 @@ exports.addParticipantToClass = async (req, res) => {
       await participant.save();
   
       // Lägg till deltagaren i klassen
-      danceClass.participants.push(participant._id);
+      danceClass.participants.push(participant.id);
       await danceClass.save();
   
       res.send(participant);
@@ -61,3 +62,31 @@ exports.addParticipantToClass = async (req, res) => {
     }
   };
 
+ exports.deleteParticipantFromClass = async (req, res) => {
+
+    try {
+        const participantId = req.params.id;
+        const participant = await Participant.findById(participantId);
+    
+        if (!participant) throw new NotFoundError(`Deltagare med id ${participantId} hittades inte`);
+    
+        const danceClass = await DanceClass.findById(participant.danceClass);
+    
+        if (!danceClass) throw new NotFoundError(`Dansklass för deltagare med id ${participantId} hittades inte`);
+    
+        // Remove participant from dance class's participants array
+        danceClass.participants.pull(participantId);
+        await danceClass.save();
+    
+        // Delete participant
+        await participant.remove();
+    
+        res.send({ message: `Deltagare med id ${participantId} har tagits bort från dansklassen med id ${danceClass._id}` });
+      } catch (error) {
+        console.error(error);
+        res.status(error.status || 500).send({ error: error.message });
+      }
+    };
+    
+  
+    
