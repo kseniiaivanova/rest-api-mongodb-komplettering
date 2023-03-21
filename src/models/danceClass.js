@@ -42,7 +42,11 @@ klassLedare: {
     type: [String],
     
     }, 
+ 
 
+status: {
+        type: String
+},
 
 participants: [{
 type: mongoose.Schema.Types.ObjectId,

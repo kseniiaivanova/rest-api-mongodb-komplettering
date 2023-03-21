@@ -7,7 +7,8 @@
 		"tid": "18:00",
 		"klasstidIMinuter": 60,
 		"pris": 1500,
-		"klassLedare": ["Leo", "Lisette"]
+		"klassLedare": ["Leo", "Lisette"],
+		"status": "aktiv"
 	},
 	{
 		"namn": "Bachata Fortsättning",
@@ -17,7 +18,8 @@
 		"tid": "19:00",
 		"klasstidIMinuter": 90,
 		"pris": 2000,
-		"klassLedare": ["Leo", "Lisette"]
+		"klassLedare": ["Leo", "Lisette"],
+		"status": "aktiv"
 	},
 	{
 		"namn": "Bachata Avancerad",
@@ -27,7 +29,8 @@
 		"tid": "18:00",
 		"klasstidIMinuter": 90,
 		"pris": 2000,
-		"klassLedare": ["Leo", "Lisette"]
+		"klassLedare": ["Leo", "Lisette"],
+		"status": "aktiv"
 	},
 	{
 		"namn": "LA Salsa Nybörjare",
@@ -37,7 +40,8 @@
 		"tid": "19:30",
 		"klasstidIMinuter": 60,
 		"pris": 1500,
-		"klassLedare": ["Leo", "Lisette"]
+		"klassLedare": ["Leo", "Lisette"],
+		"status": "aktiv"
 	},
 	{
 		"namn": "LA Salsa Fortsättning",
@@ -47,7 +51,8 @@
 		"tid": "18:00",
 		"klasstidIMinuter": 90,
 		"pris": 2000,
-		"klassLedare": ["Andreas", "Inka"]
+		"klassLedare": ["Andreas", "Inka"],
+		"status": "aktiv"
 	},
 	{
 		"namn": "LA Salsa Avancerad",
@@ -57,7 +62,8 @@
 		"tid": "19:30",
 		"klasstidIMinuter": 90,
 		"pris": 2000,
-		"klassLedare": ["Andreas", "Inka"]
+		"klassLedare": ["Andreas", "Inka"],
+		"status": "aktiv"
 	},
 	{
 		"namn": "Kubansk Salsa Nybörjare",
@@ -67,7 +73,8 @@
 		"tid": "17:30",
 		"klasstidIMinuter": 60,
 		"pris": 1500,
-		"klassLedare": ["Andreas", "Inka"]
+		"klassLedare": ["Andreas", "Inka"],
+		"status": "aktiv"
 	},
 	{
 		"namn": "Kubansk Salsa Fortsättning",
@@ -77,7 +84,8 @@
 		"tid": "18:30",
 		"klasstidIMinuter": 90,
 		"pris": 2000,
-		"klassLedare": ["Andreas", "Inka"]
+		"klassLedare": ["Andreas", "Inka"],
+		"status": "aktiv"
 	},
 	{
 		"namn": "Kubansk Salsa Avancerad",
@@ -87,6 +95,7 @@
 		"tid": "20:00",
 		"klasstidIMinuter": 90,
 		"pris": 2000,
-		"klassLedare": ["Andreas", "Inka"]
+		"klassLedare": ["Andreas", "Inka"],
+		"status": "aktiv"
 	}
 ]

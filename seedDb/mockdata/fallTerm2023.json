@@ -7,7 +7,8 @@
 		"tid": "18:00",
 		"klasstidIMinuter": 60,
 		"pris": 1500,
-		"klassLedare": ["Leo", "Lisette"]
+		"klassLedare": ["Leo", "Lisette"],
+		"status": "inaktiv"
 	},
 	{
 		"namn": "Bachata Fortsättning",
@@ -17,7 +18,8 @@
 		"tid": "19:00",
 		"klasstidIMinuter": 90,
 		"pris": 2000,
-		"klassLedare": ["Leo", "Lisette"]
+		"klassLedare": ["Leo", "Lisette"],
+		"status": "inaktiv"
 	},
 	{
 		"namn": "Bachata Avancerad",
@@ -27,7 +29,8 @@
 		"tid": "18:00",
 		"klasstidIMinuter": 90,
 		"pris": 2000,
-		"klassLedare": ["Leo", "Lisette"]
+		"klassLedare": ["Leo", "Lisette"],
+		"status": "inaktiv"
 	},
 	{
 		"namn": "Kizomba Nybörjare",
@@ -37,7 +40,8 @@
 		"tid": "19:30",
 		"klasstidIMinuter": 60,
 		"pris": 1500,
-		"klassLedare": ["Valentino", "Joan"]
+		"klassLedare": ["Valentino", "Joan"],
+		"status": "inaktiv"
 	},
 	{
 		"namn": "Kizomba Fortsättning",
@@ -47,7 +51,8 @@
 		"tid": "18:00",
 		"klasstidIMinuter": 90,
 		"pris": 2000,
-		"klassLedare": ["Valentino", "Joan"]
+		"klassLedare": ["Valentino", "Joan"],
+		"status": "inaktive"
 	},
 	{
 		"namn": "Kizomba Avancerad",
@@ -57,7 +62,8 @@
 		"tid": "19:30",
 		"klasstidIMinuter": 90,
 		"pris": 2000,
-		"klassLedare": ["Valentino", "Joan"]
+		"klassLedare": ["Valentino", "Joan"],
+		"status": "inaktiv"
 	},
 	{
 		"namn": "Kubansk Salsa Nybörjare",
@@ -67,7 +73,8 @@
 		"tid": "17:30",
 		"klasstidIMinuter": 60,
 		"pris": 1500,
-		"klassLedare": ["Andreas", "Inka"]
+		"klassLedare": ["Andreas", "Inka"],
+		"status": "inaktiv"
 	},
 	{
 		"namn": "Kubansk Salsa Fortsättning",
@@ -77,7 +84,8 @@
 		"tid": "18:30",
 		"klasstidIMinuter": 90,
 		"pris": 2000,
-		"klassLedare": ["Andreas", "Inka"]
+		"klassLedare": ["Andreas", "Inka"],
+		"status": "inaktiv"
 	},
 	{
 		"namn": "Kubansk Salsa Avancerad",
@@ -87,6 +95,7 @@
 		"tid": "20:00",
 		"klasstidIMinuter": 90,
 		"pris": 2000,
-		"klassLedare": ["Andreas", "Inka"]
+		"klassLedare": ["Andreas", "Inka"],
+		"status": "inaktiv"
 	}
 ]
