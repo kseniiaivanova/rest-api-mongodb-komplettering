@@ -30,9 +30,5 @@ const catchErrors = (fn) => {
     catchErrors,
     NotFoundError,
     BadRequestError,
-<<<<<<< HEAD
   };
   
-=======
-  };
->>>>>>> 2f8dc7735361d5597a09887e2ba4cb31a3b80f0d

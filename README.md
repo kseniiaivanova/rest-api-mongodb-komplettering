@@ -4,6 +4,7 @@
 
 - Add participant to dance class: POST /api/v1/danceClasses/:danceClassId/participants
 - Get all dance classes GET /api/v1/danceClasses/
+- Get active classes GET /api/v1/danceclasses/active
 - Delete participant from dance class: DELETE /api/v1/danceClasses/:danceClassId/participants  (provide "participantID" in body)
 
 ## Deltagare routes

@@ -44,8 +44,8 @@ klassLedare: {
     }, 
  
 
-status: {
-        type: String
+active: {
+        type: Boolean
 },
 
 participants: [{
