@@ -25,13 +25,10 @@ exports.getActiveClasses = async (req, res, next) => {
   try {
 
     
-  // Filter dance classes based on the status parameter
   const activeClasses = await DanceClass.find({ active: true });
 
 
-    
-
-    if (!activeClasses){
+  if (!activeClasses||activeClasses.length === 0){
       throw new NotFoundError("Finns inga aktiva klasser tyvärr!");
     }
 
@@ -46,18 +43,22 @@ exports.getActiveClasses = async (req, res, next) => {
 
 
 exports.addParticipantToClass = async (req, res) => {
-    try {
-      const danceClass = await DanceClass.findById(req.params.id);
-          
-      const { namn, email, role } = req.body;
+try {
+const danceClassId = req.params.danceClassId;
+
+  const { namn, email, role } = req.body;
+  const danceClass = await DanceClass.findById(danceClassId);
+      
+ if (!danceClass) {
+  return res.status(404).send("DanceClass not found");
+  }
   
-      // Kontrollera antalet deltagare i klassen
-      const totalParticipants = await Participant.find({ danceClass: danceClass._id }).countDocuments();
-      const totalLeaders = await Participant.find({ danceClass: danceClass._id, role: "ledare" }).countDocuments();
-      const totalFollowers = await Participant.find({ danceClass: danceClass._id, role: "följare" }).countDocuments();
+  const totalParticipants = await Participant.find({ danceClass: danceClass._id }).countDocuments();
+  const totalLeaders = await Participant.find({ danceClass: danceClass._id, role: "ledare" }).countDocuments();
+  const totalFollowers = await Participant.find({ danceClass: danceClass._id, role: "följare" }).countDocuments();
       
       
-      console.log(danceClass);
+      
       if (totalParticipants >= 20) {
         return res.status(400).send("Klassen har redan max antal deltagare.");
       }
@@ -80,7 +81,7 @@ exports.addParticipantToClass = async (req, res) => {
   
       await participant.save();
   
-      // Lägg till deltagaren i klassen
+      
       danceClass.participants.push(participant.id);
       await danceClass.save();
   
