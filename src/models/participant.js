@@ -14,7 +14,7 @@ email: {
 
 role: {
  type: String,   
- enum: ["ledare", "följare"],
+ 
  required: true
 },
 
