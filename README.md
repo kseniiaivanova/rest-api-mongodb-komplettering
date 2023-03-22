@@ -2,10 +2,10 @@
 
 ## Dansklass routes
 
-- Add participant to dance class: POST /api/v1/danceClasses/:danceClassId/participants
-- Get all dance classes GET /api/v1/danceClasses/
+- Add participant to dance class: POST /api/v1/danceclasses/:danceClassId/participants
+- Get all dance classes GET /api/v1/danceclasses/
 - Get active classes GET /api/v1/danceclasses/active
-- Delete participant from dance class: DELETE /api/v1/danceClasses/:danceClassId/participants  (provide "participantID" in body)
+- Delete participant from dance class: DELETE /api/v1/danceclasses/:danceClassId/participants/:participantId
 
 ## Deltagare routes
 

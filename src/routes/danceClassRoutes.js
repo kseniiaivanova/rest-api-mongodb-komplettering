@@ -16,7 +16,7 @@ const {
   router.get("/", getAllClasses);
   router.get("/active", getActiveClasses);
   router.post("/:danceClassId/participants", addParticipantToClass);
-  //router.delete("/:danceClassId/participants/:participantId", deleteParticipantFromClass);
+  router.delete("/:danceClassId/participants/:participantId", deleteParticipantFromClass);
   
   
 
