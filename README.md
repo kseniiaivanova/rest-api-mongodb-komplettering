@@ -11,17 +11,6 @@
 
 - Update participant: PUT  /api/v1/participants/:participantId
 
-## Kompletteringsuppgift för Inlämningsuppgift 2 (REST API med MongoDB)
-
-Detta är en kompletteringsuppgift för kursens individuella inlämningsuppgift nummer 2 som ämnar till att utvärdera elevens individuella kunskaper kring ExpressJS, REST API och MongoDB samt följande lärandemål från kursplanen:
-
-- Planering av att skapa dynamiska webbapplikationer
-- Programmera databasdrivna webbplatser
-- NoSQL databaser
-- Databasdesign och normalisering av NoSQL databaser
-
-Kompletteringsuppgiften är baserad på en tidigare teoretisk uppgift kring REST API och MongoDB databas design så ni bör känna igen den. Ni ska bygga ett litet REST API (med MongoDB) för en dansskola. API:et ska kunna hämta data kring kurser per termin samt lägga till deltagare till kurserna.
-
 ## Instruktioner
 
 Forka detta repo (OBS: se "Fork" knappen i övre högra hörnet). Det kommer att skapa en kopia av detta repo på ditt Github som du ska använda som startpunkt för inlämningsuppgiften.
